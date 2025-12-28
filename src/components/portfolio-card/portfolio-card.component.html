@@ -1,0 +1,9 @@
+<div class="group block bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+  <div class="relative w-full aspect-[2/3] overflow-hidden">
+    <img [ngSrc]="design().imageUrl" [alt]="design().title" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width="600" height="900">
+  </div>
+  <div class="p-6">
+    <p class="text-sm text-stone-500 uppercase tracking-wider">{{ design().collection }} &mdash; {{ design().year }}</p>
+    <h3 class="text-xl font-bold mt-1 text-stone-900">{{ design().title }}</h3>
+  </div>
+</div>
